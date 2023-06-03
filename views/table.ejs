@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Data Table</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="container" style="background-color: #fff;">
+            <table id="jsonTable" class="table  mt-4">
+                <tbody>
+                    <% for (const key in jsonData) { %>
+                        <tr>
+                            <td><%= key %></td>
+                            <td><%= jsonData[key]; %></td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div>
+                            </td>
+                            <td><input type="text" placeholder="remark"></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <button class="btn btn-primary" id="exportFile" onclick="exportData();" >Export Data</button>
+
+    </div>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

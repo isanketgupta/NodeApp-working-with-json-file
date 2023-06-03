@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Upload JSON File</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="container" style="background-color:#fff;">
+      <h1>Read And Display JSON File</h1>
+      
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Select File</label>
+          <input  type="file" name="file" class="form-control" id="exampleFormControlInput1" placeholder="Choose File">
+          <button class="btn btn-primary mt-3 mb-3" type="submit" >upload file</button>
+        </div>
+      </form>
+  </div>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
