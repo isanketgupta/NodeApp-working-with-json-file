@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="container" style="background-color: #fff;">
-            <table id="jsonTable" class="table  mt-4">
+    <div class="container-fluid " style="background-color: #fff;">
+            <table id="jsonTable" class="table table-borderless mt-3">
                 <tbody>
                     <% for (const key in jsonData) { %>
                         <tr>
@@ -24,7 +24,7 @@
                     <% } %>
                 </tbody>
             </table>
-            <button class="btn btn-primary" id="exportFile" onclick="exportData();" >Export Data</button>
+            <button class="btn btn-primary mb-3" id="exportFile" onclick="exportData();" >Export Data</button>
 
     </div>
   <script src="/js/bootstrap.min.js"></script>
